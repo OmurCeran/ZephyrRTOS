@@ -1,0 +1,22 @@
+&adc1 {
+    status = "okay";
+    st,adc-prescaler = <2>;
+    pinctrl-0 = <&adc1_in6_pa6 &adc1_in7_pa7 &adc1_in8_pb0>;
+    pinctrl-names = "default";
+};
+/*Uncomment this block ONLY if your build complains the labels are undeclared*/
+/*
+&pinctrl{
+    adc1_in6_pa6: adc1_in6_pa6 {
+        pinmux = <STM32_PINMUX('A', 6, ANALOG)>;
+    };
+
+    adc1_in7_pa7: adc1_in7_pa7 {
+        pinmux = <STM32_PINMUX('A', 7, ANALOG)>;
+    };
+
+    adc1_in8_pb0: adc1_in8_pb0 {
+        pinmux = <STM32_PINMUX('B', 0, ANALOG)>;
+    };
+}
+*/

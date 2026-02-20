@@ -1,0 +1,6 @@
+&adc1 {
+    status = "okay";
+    st,adc-prescaler = <2>;
+    pinctrl-0 = <&adc1_in4_pa4>;
+    pinctrl-names = "default";
+};
